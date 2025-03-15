@@ -1,0 +1,87 @@
+<style>
+   body {
+      background-color: black;
+      color: white;
+   }
+   a {
+      color: red;
+   }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KILLNETWORK MODE 2.0</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #countdown {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p align="center">
+        <img src="KillNetwork_LOGO_Unfinished.webp" alt="KillNetwork Logo">
+    </p>
+
+    <h1 align="center">K&nbsp;I&nbsp;L&nbsp;L&nbsp;N&nbsp;E&nbsp;T&nbsp;W&nbsp;O&nbsp;R&nbsp;K&nbsp;&nbsp;M&nbsp;O&nbsp;D&nbsp;E&nbsp;&nbsp;2&nbsp;.&nbsp;0</h1>
+    <p align="center"><strong>A powerful private Among Us utility built to destroy lobbies.</strong></p>
+
+    <p align="center">
+        <img src="OIP_3.webp" alt="crewmmate showing his dick logo of kn">
+    </p>
+
+    <h1 align="center">T&nbsp;E&nbsp;R&nbsp;M&nbsp;S&nbsp;&nbsp;&nbsp;O&nbsp;F&nbsp;&nbsp;&nbsp;S&nbsp;E&nbsp;R&nbsp;V&nbsp;I&nbsp;C&nbsp;E</h1>
+
+    <ul>
+        <li><strong>Modded servers (e.g., SKELD.NET) are strictly off-limits.</strong></li>
+        <li><strong>Unauthorized distribution is strictly prohibited and will result in severe consequences.</strong></li>
+    </ul>
+
+    <p align="center">
+        <strong>Credits:</strong>  
+        <br> KILLNETWORK MODE 2.0 by  
+        <span style="color: red;"><strong>LUCKYHEAT</strong></span> & KILLNETWORK TEAM  
+        <br> Source code by  
+        <a href="https://github.com/g0aty/SickoMenu" target="_blank">
+            <span style="color: red;">Sicko</span><span style="color: green;">Menu</span>
+        </a> Developed by <a href="https://github.com/g0aty" target="_blank">g0aty</a>.  
+        <br> Credit to <a href="https://github.com/M4-sicko" target="_blank"><strong>M4</strong></a> for making the README.
+    </p>
+
+    <p align="center">
+        <img src="file.png" alt="m4" width="200">
+    </p>
+
+    <h2 align="center">🚀 Releasing on March 19, 2025! Be ready. 🚀</h2>
+    <div id="countdown"></div>
+
+    <script>
+        function updateCountdown() {
+            const releaseDate = 1742352000 * 1000;
+            const now = new Date().getTime();
+            const timeLeft = releaseDate - now;
+
+            if (timeLeft <= 0) {
+                document.getElementById("countdown").innerHTML = "🚀 It's released! 🚀";
+                return;
+            }
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = `⏳ ${days}d ${hours}h ${minutes}m ${seconds}s remaining ⏳`;
+        }
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
